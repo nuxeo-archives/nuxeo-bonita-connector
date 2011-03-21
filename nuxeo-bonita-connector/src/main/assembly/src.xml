@@ -1,0 +1,34 @@
+<assembly
+  xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd">
+  <id>connector</id>
+  <formats>
+    <format>zip</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <dependencySets>
+    <dependencySet>
+      <outputDirectory>nuxeo/lib</outputDirectory>
+      <useProjectArtifact>true</useProjectArtifact>
+      <unpack>false</unpack>
+      <scope>runtime</scope>
+      <includes>
+        <include>net.sf.json-lib:json-lib</include>
+        <include>net.sf.ezmorph:ezmorph</include>
+        <include>org.apache.httpcomponents:httpclient</include>
+        <include>org.apache.httpcomponents:httpcore</include>
+        <include>org.nuxeo.ecm.automation:nuxeo-automation-client</include>
+      </includes>
+    </dependencySet>
+    <dependencySet>
+      <outputDirectory>nuxeo</outputDirectory>
+      <useProjectArtifact>true</useProjectArtifact>
+      <unpack>false</unpack>
+      <scope>runtime</scope>
+      <includes>
+        <include>org.nuxeo.bonita:nuxeo-bonita-connector</include>
+      </includes>
+    </dependencySet>
+  </dependencySets>
+</assembly>

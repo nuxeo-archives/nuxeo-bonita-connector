@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="nuxeoConnectorWizard"
+         name="nuxeoConnectorWizard"
+         point="org.bonitasoft.studio.connectors.connectorWizard">
+      <connectorWizard
+            connectorId="NuxeoOperationConnector"
+            priority="1"
+            useDefaultOutputPage="false">
+         <wizardPage
+               page="org.bonitasoft.studio.connector.wizard.nuxeo.pages.NuxeoConnectionPage"></wizardPage>
+         <wizardPage
+               page="org.bonitasoft.studio.connector.wizard.nuxeo.pages.NuxeoChooseOperationPage">
+         </wizardPage>
+      </connectorWizard>
+   </extension>
+
+</plugin>

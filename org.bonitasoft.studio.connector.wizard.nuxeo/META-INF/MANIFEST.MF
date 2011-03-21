@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Nuxeo
+Bundle-SymbolicName: org.bonitasoft.studio.connector.wizard.nuxeo; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.bonitasoft.studio.connector.wizard.nuxeo.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.bonitasoft.studio.connectors;bundle-version="1.0.0",
+ org.bonitasoft.studio.model;bundle-version="1.0.0",
+ org.bonitasoft.studio.groovy;bundle-version="1.0.0",
+ org.bonitasoft.studio.connector.wizard.sap;bundle-version="1.0.0",
+ org.bonitasoft.studio.pics;bundle-version="1.0.0",
+ org.bonitasoft.studio.engine.libs;bundle-version="1.0.0",
+ org.bonitasoft.studio.repository;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ClassPath: nuxeo-automation-client-5.4.0.1.jar,
+ .,
+ ezmorph-1.0.4.jar,
+ httpclient-4.0.1.jar,
+ json-lib-2.2.1-jdk15.jar,
+ commons-lang-2.4.jar,
+ commons-beanutils-core-1.8.0.jar,
+ mail-1.4.3.jar
